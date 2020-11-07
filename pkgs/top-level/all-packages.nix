@@ -9603,6 +9603,7 @@ in
   cargo-update = callPackage ../tools/package-management/cargo-update {
     inherit (darwin.apple_sdk.frameworks) Security;
   };
+  cargo-whatfeatures = callPackage ../tools/package-management/cargo-whatfeatures { };
 
   cargo-asm = callPackage ../development/tools/rust/cargo-asm {
     inherit (darwin.apple_sdk.frameworks) Security;
